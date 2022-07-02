@@ -1,7 +1,39 @@
 import React from 'react';
 
-import { MainContent } from './HomeStyle';
+import * as Style from './style';
 
 export default function Home() {
-  return <MainContent>Jogo</MainContent>;
+  return ( 
+  <Style.Container>
+    <Style.BoxWhite>
+      <Style.ContainerText>
+        <Style.Text>Bem-vindo</Style.Text>
+        <Style.TextInside>Sistem de controle</Style.TextInside>
+      </Style.ContainerText>
+      <Style.ContainerInput>
+        <Style.TextTitle>E-mail</Style.TextTitle>
+        <Style.Input></Style.Input>
+      </Style.ContainerInput>
+      <Style.ContainerInput>
+        <Style.TextTitle>Senha</Style.TextTitle>
+        <Style.Input></Style.Input>
+      </Style.ContainerInput>
+      <Style.ContainerButton>
+        <Style.Button>Login</Style.Button>
+        <Style.TextInside>Ou faça login com</Style.TextInside>
+      </Style.ContainerButton>
+      <Style.ContainerButtonSocial>
+        <Style.ButtonSocial color = {'#1155aa'}>
+          <Style.IconFacebook></Style.IconFacebook>
+        </Style.ButtonSocial>
+        <Style.ButtonSocial color = {'#0aaafd'}>
+          <Style.IconTwitter></Style.IconTwitter>
+        </Style.ButtonSocial>
+        <Style.ButtonSocial color = {'#f15d5b'}>
+          <Style.IconGooglePlus></Style.IconGooglePlus>
+        </Style.ButtonSocial>
+      </Style.ContainerButtonSocial>
+    </Style.BoxWhite>
+  </Style.Container>
+  );
 }
