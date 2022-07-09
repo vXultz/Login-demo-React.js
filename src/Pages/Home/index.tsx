@@ -1,10 +1,18 @@
 import React from 'react';
 
 import * as Style from './style';
+import imgLogin from '../../img/login.jpg';
 
 export default function Home() {
   return ( 
   <Style.Container>
+    <Style.ContainerImg>
+    <img src={imgLogin} width={'100%'}></img>
+    </Style.ContainerImg>
+    <Style.ContainerIcon>
+      <Style.IconMapMarkerAlt/>
+        <h1>VISION GO</h1>
+    </Style.ContainerIcon>
     <Style.BoxWhite>
       <Style.ContainerText>
         <Style.Text>Bem-vindo</Style.Text>

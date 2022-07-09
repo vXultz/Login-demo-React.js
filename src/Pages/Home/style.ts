@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {Facebook} from '@styled-icons/boxicons-logos/Facebook'
 import {Twitter} from '@styled-icons/boxicons-logos/Twitter'
 import {GooglePlus} from '@styled-icons/boxicons-logos/GooglePlus'
+import {MapMarkerAlt} from '@styled-icons/fa-solid/MapMarkerAlt'
 
 export const Container = styled.div`
   display: flex;
@@ -10,10 +11,39 @@ export const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   background: #3f2892;
-  justify-content: flex-end;
+`;
+
+export const ContainerIcon = styled.div`
+  display: flex;
+  width: 100;
+  position: absolute;
+  z-index: 2;
+  padding: 60px;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 1rem;
+  }
+`;
+
+
+export const IconMapMarkerAlt = styled(MapMarkerAlt)`
+  width: 5rem;
+  height: 5rem;
+  color: white;
+`;
+
+export const ContainerImg = styled.div`
+  width: 100%;
+  display: flex;
+  opacity: 0.3;
 `;
 
 export const BoxWhite = styled.div`
+  position: fixed;
+  bottom: 0;
   background: white;
   height: 30rem;
   width: 85%;
