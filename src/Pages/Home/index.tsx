@@ -24,7 +24,7 @@ export default function Home() {
       </Style.ContainerInput>
       <Style.ContainerInput>
         <Style.TextTitle>Senha</Style.TextTitle>
-        <Style.Input></Style.Input>
+        <Style.Input type='password' required></Style.Input>
       </Style.ContainerInput>
       <Style.ContainerButton>
         <Style.Button>Login</Style.Button>
